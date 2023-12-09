@@ -1,0 +1,76 @@
+@media (min-width: 1200px) {
+	.navDesktop {
+		display: flex;
+
+		.navLogoTitle {
+			font-size: 2.4rem;
+		}
+
+		.navItem {
+			font-size: 2.4rem;
+			padding: 0em 1.5em;
+		}
+	}
+
+	.mainSection {
+		.hero-img {
+			height: 75vh;
+			&__text {
+				font-size: 2.2rem;
+			}
+		}
+
+		.offers {
+			position: relative;
+			width: 100%;
+
+			&-textbox {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 2em 6em;
+
+				&__text {
+					text-align: center;
+					font-size: 2rem;
+					color: $whiteColor;
+					line-height: 200%;
+					letter-spacing: 1.5px;
+				}
+			}
+			&-box {
+				grid-template-columns: repeat(3, 1fr);
+
+				&-item {
+					position: relative;
+					width: 30vw;
+					height: 250px;
+				}
+			}
+		}
+
+		.photobox {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 0;
+
+			&-items {
+				width: 45vw;
+			}
+		}
+		.contact {
+
+			.contact-form,
+			.contact-data {
+				width: 30vw;
+				margin: 0 3em;
+			}
+
+			.contact-data {
+				p {
+					padding: 0.7em 2em;
+					font-size: 2.2rem;
+				}
+			}
+		}
+	}
+}

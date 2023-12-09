@@ -1,0 +1,136 @@
+@use './colors' as *;
+@import './burgerBtn';
+
+@media (min-width: 996px) {
+	.section-heading {
+		margin-top: 1em;
+		&__text {
+			font-size: 3rem;
+		}
+	}
+	.navDesktop {
+		.navLogoTitle {
+			font-size: 2rem;
+		}
+
+		.navItem {
+			font-size: 2rem;
+			padding: 0em 1em;
+		}
+	}
+
+	.fast-contact {
+		flex-direction: row;
+
+		.logo {
+			order: -1;
+		}
+	}
+
+	.mainSection {
+		.hero-img {
+			height: 72vh;
+
+			&__text {
+				font-size: 2rem;
+			}
+		}
+
+		.offers {
+			position: relative;
+			width: 100%;
+
+			&-textbox {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 2em 6em;
+
+				&__text {
+					text-align: center;
+					font-size: 2rem;
+					color: $whiteColor;
+					line-height: 200%;
+					letter-spacing: 1.5px;
+				}
+			}
+			&-box {
+				grid-template-columns: repeat(2, 1fr);
+
+				&-item {
+					position: relative;
+					width: 45vw;
+					height: 100px;
+				}
+			}
+		}
+	}
+
+	.dropdownIcon {
+		.circleIcon {
+			width: 70px;
+			height: 70px;
+			// animation: pulsingCircle 2s infinite;
+		}
+	}
+
+	//gallery
+
+	.gallery-box {
+		padding: 4em 2em;
+
+		&__text {
+			font-size: 2rem;
+		}
+	}
+
+	.gallery-items {
+		.gallery-heading {
+			justify-content: flex-start;
+			padding-left: 6em;
+		}
+		.gallery-photobox {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+			&-items {
+				&__item {
+					.img {
+						object-fit: cover;
+						object-position: center;
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper-desktop {
+		.desktop-offer-box {
+			&__img {
+				width: 30%;
+			}
+
+			&__text {
+				&--heading {
+					h3 {
+						font-size: 3rem;
+					}
+				}
+				&--description {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+
+	.photo-popup {
+		&-img {
+			&__item {
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

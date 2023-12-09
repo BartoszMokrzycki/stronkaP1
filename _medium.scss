@@ -1,0 +1,84 @@
+@use './colors' as *;
+@import './burgerBtn';
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 2.6rem;
+	}
+
+	.navDesktop {
+		.navLogoTitle {
+			font-size: 1.8rem;
+		}
+
+		.navItem {
+			font-size: 1.8rem;
+			padding: 0em 1em;
+		}
+	}
+
+	.mainSection {
+		.hero-img {
+			&__text {
+				font-size: 1.8rem;
+			}
+		}
+
+		.dropdownIcon {
+			.circleIcon {
+				height: 70px;
+				width: 70px;
+			}
+		}
+		.offers {
+			&-textbox {
+				&__text {
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.contact {
+			&-area {
+				flex-direction: row;
+			}
+
+			.contact-form,
+			.contact-data {
+				width: 42vw;
+				margin: 0 1em;
+			}
+
+			.contact-data {
+				p {
+					padding: 0.7em 1em;
+				}
+			}
+		}
+	}
+
+	.wrapper-desktop {
+		.desktop-offer-box {
+			&__img {
+				width: 30%;
+			}
+
+			&__text {
+				&--heading {
+					h3 {
+						font-size: 2.2rem;
+					}
+				}
+			}
+		}
+	}
+
+	.photo-popup {
+		&-img {
+			flex-direction: row;
+			&__item {
+				width: 50%;
+				height: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@use './colors' as *;
+
+@media (min-width: 576px) {
+	.navMobile,
+	.nav-items {
+		display: none;
+	}
+
+	.navDesktop {
+		display: flex;
+		padding: 1em 0;
+		border-bottom: 1px solid $secondaryColor;
+
+		.navLogoTitle {
+			font-size: 1.8rem;
+		}
+
+		.navItem {
+			font-size: 1.8rem;
+			padding: 0em 0.5em;
+		}
+	}
+
+	.mainSection {
+		.hero-img {
+			height: 72vh;
+			&__text {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.offers {
+		&-textbox {
+			&__text {
+				font-size: 1.6rem;
+			}
+		}
+	}
+
+	.gallery-items {
+		.gallery-heading {
+			justify-content: flex-start;
+			padding-left: 6em;
+		}
+		.gallery-photobox {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			justify-items: center;
+
+			&-items {
+				position: relative;
+				&__item {
+					// &:nth-child(odd)::before {
+					// 	content: ' ';
+					// 	top: 0;
+					// 	left: 0;
+					// 	position: absolute;
+					// 	width: 100%;
+					// 	height: 100%;
+					// 	background-color: transparent;
+					// 	z-index: 10000;
+					// }
+					.item-img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						object-position: center;
+						position: relative;
+					}
+				}
+			}
+		}
+	}
+
+	.wrapper-desktop {
+		display: flex;
+	}
+
+	.goBack-btn,
+	.container-mobile {
+		display: none;
+	}
+}
